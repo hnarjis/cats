@@ -1,15 +1,13 @@
-$(function() {
-    var Game = function(canvasId) {
-	    this.ctx = document.getElementById(canvasId).getContext('2d');
+window.onload = function() {
+	var canvas = document.getElementById('canvas');
+	canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+	var ctx = canvas.getContext('2d');
+	
+	ctx.fillStyle = '#708090';
+	ctx.fillRect(window.innerWidth-1000, 0, 1000, window.innerHeight);
 
-	    this.start = function() {
-	    	this.ctx.fillStyle = "#191970";
-      		this.ctx.fillRect(500, 200, 300, 300);
-	    };
-  	};
-
-    window.addEventListener('load', function() {
-	    game = new Game("canvas");
-	    game.start();
-	});
-})
+	ctx.font = "20px Arial";
+	ctx.fillStyle = "white";
+	ctx.fillText("Welcome.",15,40);
+}
