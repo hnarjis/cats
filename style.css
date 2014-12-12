@@ -1,8 +1,11 @@
 body {
-	margin: 0px;
+	margin-top: 80px;
+	background-color: black;
 }
 
 canvas {
-	background-color: black;
+	border: 5px solid white;
 	display: block;
+    margin-left: 80px;
+    margin-right: auto;
 }
