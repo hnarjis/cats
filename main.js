@@ -1,3 +1,5 @@
+var GAME = {};
+
 var Game = function() {
 	var context;
 	var timeout = 400;
