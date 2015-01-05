@@ -18,6 +18,7 @@ GAME.cats = function() {
             context.clearRect(0, 0, context.canvas.width, context.canvas.height);
             draw('white',randomizePosition());
             draw('red',randomizePosition());
+            draw('blue',randomizePosition());
             time = now; 
         }
         window.requestAnimationFrame(loop);
